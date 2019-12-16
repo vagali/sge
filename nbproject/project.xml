@@ -3,9 +3,9 @@
     <type>org.netbeans.modules.python.project</type>
     <configuration>
         <data xmlns="http://nbpython.dev.java.net/ns/php-project/1">
-            <name>VerificacionesDeProductos</name>
+            <name>verificacionDeProducto</name>
             <sources>
-                <root id="verificaciones_de_productos.dir"/>
+                <root id="src.verificaciones_de_productos.dir"/>
             </sources>
             <tests/>
         </data>
