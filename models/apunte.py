@@ -7,8 +7,5 @@ class Apunte(models.Model):
     _name = 'verificaciones_de_productos.apunte'
     
     name = fields.Char(string="Titulo", required="True")
-    description = fields.Text(string="Descripcion")
-    codigo_apunte = fields.Integer(String="Codigo de apunte")
-    
-    
-
+    description = fields.Text(string="Descripcion",required="True")
+    codigo_apunte = fields.Integer(String="Codigo de apunte", required="True")

@@ -3,14 +3,18 @@
     'name': "VerificacionesDeProductos",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Gestiona las revisiones de los apuntes guardando los comentarios y
+        los profesionales que lo hayan revisado.""",
 
     'description': """
-        Long description of module's purpose
+        Se guarda la información de todos los apuntes y todas la revisiones que
+        contengan cada uno de estos. Cada revisión consta de un comentario correspondiente
+        de un profesional especificado en una materia y un nivel. Además, cada revisión
+        guarda una fecha, ya que un mismo profesional puede repetir la revisión de
+        un mismo apunte.
     """,
 
-    'author': "My Company",
+    'author': "2DAM2CURIOUS",
     'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
