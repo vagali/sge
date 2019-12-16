@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_verificaciones_de_productos_verificaciones_de_productos,verificaciones_de_productos.verificaciones_de_productos,model_verificaciones_de_productos_verificaciones_de_productos,,1,0,0,0
