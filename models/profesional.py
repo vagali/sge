@@ -5,7 +5,7 @@ from odoo import models, fields, api
 
 class Profesional(models.Model):
     _name = 'verificaciones_de_productos.profesional'
-    _inherit = 'res.user'
+    _inherit = 'res.users'
     
     description = fields.Text(required="True",string="Descripcion")
     contacto = fields.Char(required="True", string="Contacto")

@@ -24,8 +24,8 @@ class Revision(models.Model):
 class Nivel(models.Model):
     _name = 'verificaciones_de_productos.nivel'
     
-    nivel_academico = fields.char(string = "Nivel academico")
-    espeificacion = fields.char(string = "Especificacion")
+    nivel_academico = fields.Char(string = "Nivel academico")
+    espeificacion = fields.har(string = "Especificacion")
     descripcion = fields.Text()
     
     profesional_id = fields.One2many('verificaciones_de_productos.profesional', ondelete = 'cascade', string = "Profesional" )
@@ -36,3 +36,10 @@ class Apunte(models.Model):
     name = fields.Char(string="Titulo", required="True")
     description = fields.Text(string="Descripcion",required="True")
     codigo_apunte = fields.Integer(String="Codigo de apunte", required="True")
+    
+class Profesional(models.Model):
+    _name = 'verificaciones_de_productos.profesional'
+    _inherit = 'res.users'
+    
+    description = fields.Text(required="True",string="Descripcion")
+    contacto = fields.Char(required="True", string="Contacto")
