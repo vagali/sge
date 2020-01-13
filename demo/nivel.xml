@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record model="verificaciones_de_productos.apunte" id="apunte1">
+            <field name="name">apun1</field>
+            <field name="description">asdasdasdasda</field>
+            <field name="codigo_apunte">1</field>
+        </record>
+        <record model="verificaciones_de_productos.apunte" id="apunte2">
+            <field name="name">apun2</field>
+            <field name="description">dasdadadadsasda</field>
+            <field name="codigo_apunte">2</field>
+        </record>
+        <record model="verificaciones_de_productos.apunte" id="apunte3">
+            <field name="name">apun3</field>
+            <field name="description">adadadasdadad</field>
+            <field name="codigo_apunte">3</field>
+        </record>
+    </data>
+</odoo>
