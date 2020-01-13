@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="apunte_form_view">
+            <field name="name">apunte.form</field>
+            <field name="res_model">verificaciones_de_productos.apunte</field>
+             <field name="view_type">form</field>
+             <field name="view_mode">tree,form</field>
+             <field name="help" type="html">
+                 <p class="oe_view_nocontent_create">Crea tu primer apunte</p>
+             </field>           
+        </record>
+        <!-- EL MENU DEL MENUBAR-->
+        <menuitem id="main_verificaciones_menu" name="Apuntes"/>
+        <menuitem id="main_verificaciones_menu" name="Apuntes" parent="main_verificaciones_menu"/>
+        <menuitem id="apunte_menu" name="Apunte" parent="main_verificaciones_menu"action="course_list_action"/>
+    </data>
+</odoo>
