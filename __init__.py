@@ -4,3 +4,4 @@ from . import controllers
 import models.models
 import models.apunte
 import models.nivel
+import models.profesional
