@@ -22,7 +22,7 @@ class Revision(models.Model):
     anotacion = fields.Text(string="Anotacions sobre el apunte")
     
 class Nivel(models.Model):
-    _name = 'verificaciones_de_productos.nivel'
+    _name = 'verificaciones_de_productos.niveles'
     
     nivel_academico = fields.Char(string = "Nivel academico")
     espeificacion = fields.har(string = "Especificacion")
@@ -39,7 +39,7 @@ class Apunte(models.Model):
     
 class Profesional(models.Model):
     _name = 'verificaciones_de_productos.profesional'
-    _inherit = 'res.users'
+    #_inherit = 'res.users'
     
-    description = fields.Text(required="True",string="Descripcion")
-    contacto = fields.Char(required="True", string="Contacto")
+    description = fields.Text(string="Descripcion",required="True")
+    contacto = fields.Char(string="Contacto",required="True")
