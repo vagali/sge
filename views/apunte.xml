@@ -27,6 +27,22 @@
                             <field name="name"/>
                             <field name="description"/>
                         </group>
+                        <notebook>
+                            <page string="Revisiones">
+                                <field name="revisiones_ids">
+                                    <tree string="Sus revisiones">
+                                        <field name="anotacion"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Tipo de apunte">
+                                <field name="es_de_profesional"/>
+                            </page>
+                            
+                        </notebook>
+                        <!--notebook>
+                            
+                        </notebook-->
                     </sheet>
                 </form>
             </field>

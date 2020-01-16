@@ -17,7 +17,8 @@ from odoo import models, fields, api
 class Revision(models.Model):
     _name = 'verificaciones_de_productos.revision'
     
-    apunte_id = fields.Many2one('verificaciones_de_productos.apunte', ondelete='cascade', string="Apunte", index=True)
+    #apunte_id = fields.Many2one('verificaciones_de_productos.apunte', ondelete='cascade', string="Apunte", index=True)
+    apunte_id = fields.Many2one('verificaciones_de_productos.apunte', ondelete='cascade', string="Apunte", required=True)
     profesional_id = fields.Many2one('verificaciones_de_productos.profesional', string="Profesional")
     anotacion = fields.Text(string="Anotacions sobre el apunte")
     
