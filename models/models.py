@@ -21,25 +21,5 @@ class Revision(models.Model):
     profesional_id = fields.Many2one('verificaciones_de_productos.profesional', string="Profesional")
     anotacion = fields.Text(string="Anotacions sobre el apunte")
     
-class Nivel(models.Model):
-    _name = 'verificaciones_de_productos.niveles'
+
     
-    nivel_academico = fields.Char(string = "Nivel academico")
-    espeificacion = fields.har(string = "Especificacion")
-    descripcion = fields.Text()
-    
-    profesional_id = fields.One2many('verificaciones_de_productos.profesional', ondelete = 'cascade', string = "Profesional" )
-    
-class Apunte(models.Model):
-    _name = 'verificaciones_de_productos.apunte'
-    
-    name = fields.Char(string="Titulo", required="True")
-    description = fields.Text(string="Descripcion",required="True")
-    codigo_apunte = fields.Integer(String="Codigo de apunte", required="True")
-    
-class Profesional(models.Model):
-    _name = 'verificaciones_de_productos.profesional'
-    #_inherit = 'res.users'
-    
-    description = fields.Text(string="Descripcion",required="True")
-    contacto = fields.Char(string="Contacto",required="True")
