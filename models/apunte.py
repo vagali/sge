@@ -9,4 +9,5 @@ class Apunte(models.Model):
     name = fields.Char(string="Titulo", required="True")
     description = fields.Text(string="Descripcion",required="True")
     codigo_apunte = fields.Integer(String="Codigo de apunte", required="True")
-    
+    es_profesional = fields.Boolean(string="Hecho por un profesional", default=False)
+    revisiones_ids = fields.One2many('verificaciones_de_productos.revision','apunte_id', string ="Revisiones")

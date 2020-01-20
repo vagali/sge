@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- PARTE DE LAS ACCIONES -->
+        <record model="ir.actions.act_window" id="apunte_list_action">
+            <field name="name">Apuntes</field><!-- otro nombre apunte-->
+            <field name="res_model">verificaciones_de_productos.apunte</field>
+            <field name="view_mode">tree,form</field>
+            <!--field name="help" type="html">
+                <p class="oe_view_nocontent_create">Crea tu primer apunte</p>
+            </field-->           
+        </record>
+        <!-- EL MENU DEL MENUBAR-->
+        <!-- top level menu: no parent -->
+        <menuitem id="main_verificaciones_menu" name="Verificaciones"/>
+        <menuitem id="verificaciones_menu" name="Verificaciones" parent="main_verificaciones_menu"/>
+        <menuitem id="apunte_menu" name="Apuntes" parent="verificaciones_menu" action="apunte_list_action"/>
+        <!-- VISTA DE FORMULARIO -->
+        <record model="ir.ui.view" id="apunte_form_view">
+            <field name="name">apunte.form</field>
+            <field name="model">verificaciones_de_productos.apunte</field>
+            <field name="arch" type="xml">
+                <form string="Apunte Form">
+                    <sheet>
+                        <group>
+                            <field name="codigo_apunte"/>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                        <notebook>
+                            <page string="Revisiones">
+                                <field name="revisiones_ids">
+                                    <tree string="Sus revisiones">
+                                        <field name="anotacion"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Tipo de apunte">
+                                <field name="es_de_profesional"/>
+                            </page>
+                            
+                        </notebook>
+                        <!--notebook>
+                            
+                        </notebook-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- VISTA DE BUSQUEDA -->
+        <record model="ir.ui.view" id="apunte_search_view">
+            <field name="name">apunte.search</field>
+            <field name="model">verificaciones_de_productos.apunte</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="codigo_apunte"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
+        <!-- VISTA DE LISTA -->
+        <record model="ir.ui.view" id="apunte_tree_view">
+            <field name="name">apunte.tree</field>
+            <field name="model">verificaciones_de_productos.apunte</field>
+            <field name="arch" type="xml">
+                <tree string="Apunte list">
+                    <field name="name"/>
+                    <field name="codigo_apunte"/>
+                </tree>
+            </field>
+        </record>
+        
+    </data>
+</odoo>
