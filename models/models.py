@@ -21,6 +21,3 @@ class Revision(models.Model):
     apunte_id = fields.Many2one('verificaciones_de_productos.apunte', ondelete='cascade', string="Apunte", required=True)
     profesional_id = fields.Many2one('verificaciones_de_productos.profesional', string="Profesional")
     anotacion = fields.Text(string="Anotacions sobre el apunte")
-    
-
-    

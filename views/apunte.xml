@@ -36,7 +36,7 @@
                                 </field>
                             </page>
                             <page string="Tipo de apunte">
-                                <field name="es_de_profesional"/>
+                                <p>¿Creador por un profesional?</p><field name="es_profesional"/>
                             </page>
                             
                         </notebook>
@@ -67,6 +67,8 @@
                 <tree string="Apunte list">
                     <field name="name"/>
                     <field name="codigo_apunte"/>
+                    <field name="description"/>
+                    <field name="frase_es_profesional"/>
                 </tree>
             </field>
         </record>

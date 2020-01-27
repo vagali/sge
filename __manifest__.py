@@ -29,7 +29,7 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/apunte.xml'
+        'views/apunte.xml','views/nivel.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

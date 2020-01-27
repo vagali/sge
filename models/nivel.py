@@ -9,5 +9,7 @@ class Nivel(models.Model):
     nivel_academico = fields.Char(string = "Nivel academico")
     espeificacion = fields.Char(string = "Especificacion")
     descripcion = fields.Text()
+    revisiones_ids = fields.One2many('verificaciones_de_productos.profesional','id', string ="Revisiones")
     
-    #profesional_id = fields.One2many('verificaciones_de_productos.profesional', ondelete = 'cascade', string = "Profesional" )
+
+  
